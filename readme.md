@@ -1,0 +1,30 @@
+# [Interference Reduction] Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]
+
+Introduction: Radar sensors are key components in current driver assistance systems and autonomous driving applications. Frequency modulated continuous wave (FMCW) / linear frequency modulation sequence (CS) radars are currently popular types of radars. They share a non-regulated spectrum, emitting linear chirped signal sequences. The need for fine-grained distance resolution necessitates larger radio frequency (RF) transmit bandwidth, while the number of deployed sensors is also increasing. As a result, interference between radar sensors becomes increasingly likely. The most common form of interference is non-coherent interference [1], where radar sensors with different emission signal parameters interfere with each other. This leads to time-limited broadband interference in the baseband signal, primarily reducing target detection sensitivity [2]. Therefore, interference suppression is a critical aspect of current and future radar sensors for safety environments.
+To mitigate interference, several traditional signal processing algorithms have been proposed. The most basic method involves zeroing out detected interference samples. In [3], slow time nonlinear filtering is used to remove interference. In [4], an alternative approach was introduced, which uses Fourier transform and threshold processing iteratively to reconstruct useful signals [5]. Interference components can be estimated and subtracted, as in [6]. Additionally, beamforming can be used to reduce the impact of interference from specific directions [7]. In [8], some machine learning techniques were discussed in the context of interference detection and classification. However, no explicit machine learning methods have been proposed for interference mitigation within this context.
+In this paper, we employ neural networks (NN) as a powerful machine learning method to mitigate interference. Specifically, Convolutional Neural Networks (CNN) are utilized. They can learn local patterns by considering nearby inputs and identify them throughout the data signal. This structure is also beneficial for spectral graph representations. Furthermore, compared to fully connected NNs, CNNs require relatively fewer learnable parameters, making them more suitable for deployment on resource-constrained systems, such as chip-level integration. We will demonstrate how to use the dual-channel representation of complex frequency spectrum data from two different points in the processing chain [9] as network inputs.
+Due to the safety critical nature of automotive radar, certain requirements must be met for interference suppression and signal denoising algorithms. In addition to sufficient noise suppression, the processing should avoid generating phantoms that could lead to false detections (multiple objects). We address these issues by using detailed performance comparisons in Monte Carlo simulations [10] evaluating various application-related measures.
+The main contributions of this paper are:
+·We show the specific CNN architecture capable of denoising radar signals.
+·We compare our approach with state-of-the-art techniques using application-specific performance metrics.
+·We demonstrate that it is possible to achieve excellent denoising levels, thereby improving detection sensitivity.
+Conclusion In this paper, a new neural network-based method for mitigating mutual interference and denoising in the context of automotive radar sensors has been proposed. It is noteworthy that in Doppler signal processing, (complex value) spectrum plots from different steps are used as inputs to the network, and whether they are suitable for CNN processing. A wide range of simulation frameworks are used for data generation, training, and evaluation. The most promising model architectures are then compared with a small selection of well-known traditional interference mitigation techniques. The results show that the CNN-based models can retain target peaks while suppressing several orders of magnitude of noise and interference compared to traditional methods. However, their performance may not be robust enough, especially when considering distortions in object peaks. Moreover, the amount of suppression achieved indicates inherent peak detection capabilities, which certainly stems from using clean training data. The future most important question is the generalization ability of the analysis architecture to real-world data. Additionally, we want to investigate the potential of time information distance Doppler processing using neural networks.
+
+## Images
+
+![(Interference Reduction)Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]](01.jpg)
+![(Interference Reduction)Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]](02.jpg)
+![(Interference Reduction)Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]](03.jpg)
+![(Interference Reduction)Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]](04.jpg)
+![(Interference Reduction)Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]](05.jpg)
+![(Interference Reduction)Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]](06.jpg)
+![(Interference Reduction)Automotive Radar Complex Signal Denoising and Interference Reduction Based on Convolutional Neural Networks [with MATLAB Code]](07.jpg)
+
+<!-- PAYMENT_BLOCK -->
+
+## Get this dataset
+
+- Payment link (Stripe): [Buy now](https://buy.stripe.com/3cs8yP7sY87d0vu9AB)
+- Payment QR code: ![Payment QR code](pay.png)
+
+<!-- /PAYMENT_BLOCK -->
